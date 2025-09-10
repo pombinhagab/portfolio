@@ -27,7 +27,7 @@ export const MobileNavbar = ({ menuOpen, setMenuOpen }) => {
             : "opacity-0 -transtale-y-5"
             }
             `}>
-                Home
+                Início
             </a>
             <a
             href="#about"
@@ -38,7 +38,7 @@ export const MobileNavbar = ({ menuOpen, setMenuOpen }) => {
                 : "opacity-0 -transtale-y-5"
                 }
                 `}>
-                About
+                Sobre
             </a>
             <a
             href="#projects"
@@ -49,7 +49,7 @@ export const MobileNavbar = ({ menuOpen, setMenuOpen }) => {
                 : "opacity-0 -transtale-y-5"
                 }
                 `}>
-                Projects
+                Projetos
             </a>
             <a
             href="#contact"
@@ -60,7 +60,7 @@ export const MobileNavbar = ({ menuOpen, setMenuOpen }) => {
                 : "opacity-0 -transtale-y-5"
                 }
                 `}>
-                Contact
+                Contato
             </a>
     </div>
   );

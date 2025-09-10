@@ -12,12 +12,12 @@ export const About = () => {
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            About Me
+            Sobre mim
           </h2>
 
           <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
             <p className="text-white mb-6">
-              Passionate developer with expertise in backend and web development applications and creating innovative solutions.
+              Desenvolvedor apaixonado, com expertise em backend e desenvolvimento web, criando soluções inovadoras.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -53,24 +53,24 @@ export const About = () => {
             </div>
 
             <a
-              href="/path-to-your-cv.pdf"
+              href="https://pombinhagab.github.io/portfolio/Curriculo.pdf"
               className="block mt-6 text-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
               download
             >
-              Download CV
+              Baixar Curriculo
             </a>
           </div>
 
           {/* Education */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">Education</h3>
+              <h3 className="text-xl font-bold mb-4">Educação</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong>Graduating in Software Engineering</strong> - Uniacademia - Centro Universitario
+                  <strong>Graduação em Engenharia de Software</strong> - Uniacademia - Centro Universitario
                 </li>
                 <li>
-                  <strong>Relevant Coursework</strong> Django Master by Felipe Azambuja
+                  <strong>Cursos</strong> - Django Master por Felipe Azambuja (em andamento)
                 </li>
               </ul>
             </div>

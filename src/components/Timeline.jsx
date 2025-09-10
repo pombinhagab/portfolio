@@ -14,13 +14,13 @@ export const Timeline = () => {
     },
     {
       year: "2025 — Primeiro Grande Projeto",
-      title: "Car Dealership Management System",
+      title: "Revenda de Carros",
       desc: "Desenvolvi um sistema de revenda de carros com Django e integração de AI.",
     },
     {
       year: "2025 — Projeto Atual",
-      title: "LoL Build Assistant",
-      desc: "Iniciando o desenvolvimento de um sistema que integra frontend com AI para builds personalizadas.",
+      title: "Detecção de Alimentos e Sugestão de Refeições",
+      desc: "Aplicação em Python com OpenCV e IA para identificar alimentos pela câmera e sugerir refeições.",
     },
   ];
 
@@ -31,7 +31,7 @@ export const Timeline = () => {
     >
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-          My Journey
+          Minha Jornada
         </h2>
 
         <div className="relative">

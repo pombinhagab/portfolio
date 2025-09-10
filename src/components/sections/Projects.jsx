@@ -1,20 +1,20 @@
-// Projects.jsx
+
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Car Dealership Management System + AI Integration v1.0",
-      status: "WIP",
-      desc: "A web application built with Django to manage a car dealership, featuring vehicle listings, sales management, and user-friendly interfaces for browsing and administration.",
+      title: "Revenda de Carros + Integração com IA v1.0",
+      status: "BETA",
+      desc: "Sistema de revenda de carros em Python e Django com PostgreSQL, integrado a IA para otimizar processos.",
       tech: ["Django", "Python", "PostgreSQL"],
-      link: "https://carros-4z6c.onrender.com/cars/",
+      link: "https://github.com/pombinhagab/carros",
     },
     {
-      title: "LoL Build Assistant – Frontend + AI Integration",
+      title: "Detecção de Alimentos e Sugestão de Refeições (Python, IA e OpenCV)",
       status: "WIP",
-      desc: "Frontend project integrated with an AI API that generates personalized builds for characters, showcasing API integration, UI design, and dynamic rendering.",
-      tech: ["HTML", "CSS", "React"],
+      desc: "Aplicação em Python com OpenCV e IA para identificar alimentos pela câmera e sugerir refeições.",
+      tech: ["Python", "OpenCV", "AI"],
       link: "#",
     },
   ];
@@ -24,9 +24,8 @@ export const Projects = () => {
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            Featured Projects
+            Projetos
           </h2>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <div
@@ -34,7 +33,12 @@ export const Projects = () => {
                 className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
               >
                 <h3 className="text-xl font-bold mb-2">
-                  {project.title} <span className="text-red-500">({project.status})</span>
+                  <span className={project.title.includes("Car Dealership") ? "text-blue-400" : "text-white"}>
+                    {project.title}
+                  </span>{" "}
+                  <span className={project.status === "WIP" ? "text-red-500" : "text-blue-300"}>
+                    ({project.status})
+                  </span>
                 </h3>
                 <p className="text-gray-300 mb-4">{project.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -49,7 +53,7 @@ export const Projects = () => {
                 </div>
                 <div className="flex justify-end">
                   <a href={project.link} target="_blank" className="text-blue-400 hover:text-blue-300 transition-colors">
-                    View Project ⭢
+                    Ver Projeto ⭢
                   </a>
                 </div>
               </div>
